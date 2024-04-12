@@ -1,0 +1,101 @@
+/* Стили для заголовка */
+.Хабарова_БСБО-01-22_Гл {
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 14pt;
+ color: #000000;
+ font-weight: bold;
+ text-transform: uppercase;
+ page-break-before: always;
+ text-align: justify;
+ margin-bottom: 14pt;
+}
+
+/* Стили для подзаголовков */
+.Хабарова_БСБО-01-22_Подзаг {
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 14pt;
+ color: #000000;
+ font-weight: normal;
+ font-variant: small-caps;
+ text-align: justify;
+ margin-bottom: 12pt;
+ line-height: 20pt;
+ clear: both;
+}
+
+/* Стили для основного текста */
+.Хабарова_БСБО-01-22_Оснтек {
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 14pt;
+ color: #000000;
+ font-style: italic;
+ text-align: justify;
+ margin-bottom: 1.5cm;
+ padding-left: 2.5cm;
+}
+
+body {
+	background-image: url("background.jpg");
+    background-color: #99ccff; /* Резервный цвет фона */
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.leftimg {
+	float: left;
+    margin: 7px 7px 7px 0;
+}
+
+.ref {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 14pt;
+	font-style: italic;
+	color: #000000;
+}
+
+.icon-text {
+ display: inline-block;
+ width: 40px;
+ height: 40px;
+ background-image: url('arrow.png');
+ background-size: cover;
+ background-repeat: no-repeat;
+ font-size: 0;
+ text-indent: -9999px;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal__window {
+ position: relative;
+ background-color: white;
+ padding: 4em 2em;
+ width: 80%;
+ max-width: 500px;
+}
+
+.modal__close {
+ position: absolute;
+ top: -30px;
+ right: 0;
+ text-decoration: none;
+ color: black;
+}
